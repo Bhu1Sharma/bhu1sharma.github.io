@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    overflow: hidden;
+}
+
+
+#root{
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+#header{
+    width:100%;
+    height:60px;
+    background-color: lightblue;
+}
+
+#header span{
+    height:100%;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#content{
+    background-color: whitesmoke;
+    width:100%;
+    height:calc(100% - 120px);
+    padding: 20px;
+}
+
+
+#footer{
+    background-color: lightblue;
+    width:100%;
+    height: 60px;
+}
+
+
+
+#navbar{
+    width:100%;
+    background:linear-gradient(lightblue,white);
+    border-bottom: 0.3px solid;
+    border-top: 0.3px solid;
+    padding-top: 6px;
+}
+
+#navbar a{
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+    width:100px;
+    padding:6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    height:39.4px;
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    border:1px;
+}
+
+#home,
+#about,
+#projects,
+#review{
+    display: none;
+    width:100%;    
+    height:100%;
+}
+#home{
+    display: block;
+    width:100%;    
+    height:100%;
+}
+tr:hover{
+    background-color: lightgrey;
+}
+
+th{
+    border: 0.5px solid black;
+    background-color: lightblue;
+    font-weight: 600;
+    width:200px;
+    padding: 6px;
+}
+table td a{
+ color:black;
+}
+td{
+    border:0.5px solid black;
+    padding: 8px;
+}
+
+@media only screen and (max-width:450px){
+    #navbar a{
+        display: block;
+        width:100%;
+    }
+    #header{
+        text-align: center;
+    }
+    #header span{
+        font-size:36px;
+    }
+}
